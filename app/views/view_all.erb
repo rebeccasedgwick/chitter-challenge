@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<% @messages.each do |message| %>
+  <h3><%= message.user.name %> (@<%= message.user.username %>)</h3>
+  <%= message.body %>
+  <h6><%= message.created_at %></h6>
+  <br><br>
+<% end %>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<h1>Sign Up for Chitter</h1>
+<form action="/new_user" method="post">
+  <label for="name">
+    Enter your name:
+    <input type="text" name="name">
+  </label>
+  <br>
+  <br>
+  <label for="username">
+    Enter your username:
+    <input type="text" name="username">
+  </label>
+  <br>
+  <br>
+  <label for="email">
+    Enter your email address:
+    <input type="text" name="email">
+  </label>
+  <br>
+  <br>
+  <label for="password">
+    Enter your password:
+    <input type="password" name="password">
+  </label>
+
+  <p><input type="submit" value="Sign Up"></p>
+</form>
+
+<h3 style="color:red">
+  <%= flash[:user_error] %>
+</h3>

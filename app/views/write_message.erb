@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<h1>Write a new Peep</h1>
+<form action="/add" method="post">
+  <label for="message">
+    Peep:
+    <textarea name="message" rows="3"></textarea>
+  </label>
+  <p><input type="submit" value="Save"></p>
+</form>
+
+<h3 style="color:red">
+  <%= flash[:error] %>
+</h3>
